@@ -1,0 +1,26 @@
+CRUD Usuario:
+-	Crear usuario
+-	Actualizar usuario
+-	Eliminar usuario
+-	Buscar usuario por id 
+-	Listar todos los usuarios
+CRUD Cliente:
+-	Crear cliente
+-	Actualizar cliente
+-	Eliminar cliente
+-	Buscar cliente por id 
+-	Listar todos los clientes
+CRUD Producto:
+-	Crear producto
+-	Actualizar producto
+-	Eliminar producto
+-	Buscar producto por id
+-	Listar todos los productos
+
+Crear Pedido
+Listar todos los pedidos
+Crear PedidoDetalle
+Listar PedidoDetalle por pedidoId
+Logueo: Consulta por usuario y clave -> retornar todos los datos del usuario, con el perfil y los respectivos recursos asignados a ese perfil
+
+

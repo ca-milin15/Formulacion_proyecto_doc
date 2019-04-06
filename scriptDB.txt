@@ -1,0 +1,34 @@
+create table Recurso(
+Id bigint not null,
+Nombre varchar(50),
+Codigo varchar(10),
+Ruta varchar(100),
+FechaCreado date,
+CreadoPor varchar(50),
+PRIMARY KEY(Id)
+);
+
+create table Perfil(
+Id bigint not null,
+Nombre varchar(30),
+Codigo varchar(30),
+TipoPerfil varchar(3),
+RecursoId bigint,
+FechaCreado date,
+CreadoPor varchar(50),
+PRIMARY KEY(Id),
+FOREIGN KEY(RecursoId) REFERENCES Recurso(Id)
+);
+
+create table Usuario(
+Id bigint not null,
+Usuario varchar(15) not null,
+Clave varchar(50),
+Nombre varchar(30),
+Apellidos varchar(30),
+PerfilId bigint,
+FechaCreado date,
+CreadoPor varchar(50),
+PRIMARY KEY(Id),
+FOREIGN KEY(PerfilId) REFERENCES Perfil(Id)
+);

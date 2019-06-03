@@ -53,7 +53,6 @@ create table pedido(
 	ciudad varchar(50) not null,
 	observacion varchar(500),
 	estado char(3),
-	pedidoDetalleId bigInt,
 	creadoPor bigInt,
 	fechaCreacion date,
     primary key(id),
